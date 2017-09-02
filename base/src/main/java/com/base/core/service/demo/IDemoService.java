@@ -1,6 +1,6 @@
 package com.base.core.service.demo;
 
-import java.util.List;
+import java.util.Map;
 
 import com.base.core.model.CarInfo;
 
@@ -19,5 +19,5 @@ public interface IDemoService {
 	/**
 	 * @return
 	 */
-	List<CarInfo> selectAllCarInfo();
+	Map<String, Object> selectAllCarInfo();
 }

@@ -1,10 +1,8 @@
 package com.base.core.controller.demo;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
-import org.apache.commons.collections.CollectionUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -41,10 +39,7 @@ public class DemoController extends BaseController {
 	@PostMapping("/getCarInfoList")
 	@ApiOperation(value = "Demo查询汽车信息", notes = "Demo查询汽车信息")
 	public Map<String, Object> getCarInfoList() {
-		final Map<String, Object> map = new HashMap<>();
-		final List<CarInfo> list = service.selectAllCarInfo();
-		map.put("list", list);
-		map.put("result", !CollectionUtils.isEmpty(list));
+		Map<String, Object> map = service.selectAllCarInfo();
 		return map;
 	}
 
