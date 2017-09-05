@@ -4,7 +4,7 @@ import javax.persistence.Column;
 import javax.persistence.Table;
 
 @Table(name = "car_info")
-public class CarInfo extends BaseVo {
+public class CarInfo extends BaseModel {
 	/*** */
 	private static final long serialVersionUID = 1L;
 

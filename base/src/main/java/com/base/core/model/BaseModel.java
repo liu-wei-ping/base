@@ -12,7 +12,7 @@ import io.swagger.annotations.ApiModelProperty;
  * @author liu wp
  * @data  2017年8月29日
  */
-public class BaseVo implements Serializable {
+public class BaseModel implements Serializable {
 	/*** */
 	private static final long serialVersionUID = 1L;
 	@Column(name = "create_time")
@@ -26,7 +26,7 @@ public class BaseVo implements Serializable {
 	@ApiModelProperty(hidden = true, value = "跟新时间")
 	private Date updateTime;
 
-	public BaseVo() {
+	public BaseModel() {
 		this.createTime = new Date();
 	}
 
